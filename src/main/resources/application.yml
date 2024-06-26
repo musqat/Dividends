@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: financial
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:muscat;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
