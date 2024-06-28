@@ -1,5 +1,7 @@
 package org.example.dividends;
 
+import org.apache.commons.collections4.Trie;
+import org.apache.commons.collections4.trie.PatriciaTrie;
 import org.example.dividends.model.Company;
 import org.example.dividends.scraper.Scraper;
 import org.example.dividends.scraper.YahooFinanceScraper;
@@ -18,6 +20,7 @@ public class DividendsApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DividendsApplication.class, args);
+
 
     }
 
